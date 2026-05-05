@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+import numpy as np
+districts = np.array(['Chennai', 'Coimbatore', 'Madurai', 'Trichy', 'Tirunelveli', 'Salem'])
+rainfall = np.array([150, 220, 180, 160, 280, 200])
+plt.plot(districts,rainfall,color="blue")
+# plt.plot(districts,rainfall,'ro')
+plt.xlabel("District")
+plt.ylabel("Rainfall (mm)")
+plt.title("Rainfall in Different Districts")
+plt.grid(True)
+plt.show()
